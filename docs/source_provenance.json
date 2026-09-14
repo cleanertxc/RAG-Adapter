@@ -1,0 +1,26 @@
+[
+  {
+    "source": "scripts/gpt4o_test.ipynb",
+    "source_sha256": "46b9ca34f4cad18a06a771dec0ecc23bd09d905fa5cbbf82664c5aea29b55274",
+    "release": "notebooks/rag_adapter_experiments.ipynb",
+    "original_cell_count": 104
+  },
+  {
+    "source": "scripts/sample_frames.ipynb",
+    "source_sha256": "2e2b8e6943fa2218c5e750f73b7c11f4b21392ffe30b98df5615ee5d16ddc90b",
+    "release": "notebooks/frame_extraction.ipynb",
+    "original_cell_count": 38
+  },
+  {
+    "source": "scripts/sample_videos.ipynb",
+    "source_sha256": "899220e4c0df34c39d455e7f21265b2b4ac56f3321c492660cf8a32a4628881f",
+    "release": "notebooks/video_sampling.ipynb",
+    "original_cell_count": 5
+  },
+  {
+    "source": "scripts/acc.ipynb",
+    "source_sha256": "e98c0ba212c70ebbdc8a8fe12c5043971e662bbc396ad3f2734e41dc2e03d5da",
+    "release": "notebooks/legacy_evaluation.ipynb",
+    "original_cell_count": 25
+  }
+]

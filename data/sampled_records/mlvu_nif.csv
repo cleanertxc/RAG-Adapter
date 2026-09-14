@@ -1,0 +1,157 @@
+record_no,source_row,video_id,task,question_id,question,nif,timestamp
+1,2,movie101_55,1_plotQA,,What is the first expression of the person in the gray suit jacket after receiving the item from the little girl in front of the ruins?,1,151
+2,3,movie101_55,1_plotQA,,Why is the person in the gray suit jacket standing at the door of the ward?,2,3;5
+3,4,movie101_56,1_plotQA,,What color is the man's clothes when he arrives at the woman's house?,1,164
+4,5,movie101_56,1_plotQA,,What is on the woman's table that makes the man angry?,1,188
+5,6,movie101_56,1_plotQA,,What is the man's emotion at the beginning?,1,99
+6,7,movie101_104,1_plotQA,,What is the girl's reaction after the phone call at the beginning of the video?,1,4
+7,8,movie101_104,1_plotQA,,What is the girl with glasses' mood after receiving the letter for the second time?,2,60;61
+8,9,movie101_104,1_plotQA,,Why does the girl with glasses run downstairs in a hurry?,3,276;300;314
+9,10,xiaoliyu_3,1_plotQA,,What did the cartoon dragon do when the lava flowed into the sea?,3,211;258;268
+10,11,xiaoliyu_3,1_plotQA,,What did the cartoon dragon turn into after flying into the volcano?,1,301
+11,12,xiaoliyu_3,1_plotQA,,What did the cartoon snake place on the ground?,1,36
+12,13,haimian_7,1_plotQA,,What does the Cartoon Sponge do with the Cartoon Shark?,1,123
+13,14,haimian_7,1_plotQA,,What do the other cartoon animals do to the Cartoon Shark and Cartoon Sponge?,1,191
+14,15,haimian_7,1_plotQA,,Why did the Cartoon Sponge turn into a sphere?,2,180;181
+15,16,haimian_7,1_plotQA,,Why is the Cartoon Octopus angry?,1,394
+16,17,movie101_14,1_plotQA,,What color are the pants worn by the woman standing at the door in the video?,1,160
+17,18,movie101_14,1_plotQA,,What color is the bag on the table in the video?,1,155
+18,19,movie101_14,1_plotQA,,What color is the long skirt worn by the girl in the video?,1,108
+19,20,movie101_14,1_plotQA,,What color is the suit worn by the man holding a concert in the video?,1,19
+20,21,movie101_15,1_plotQA,,What color is the animal that appears in the video?,1,1
+21,22,movie101_15,1_plotQA,,What color is the hair of the person who gets spit on by the llama in the video?,1,44
+22,23,movie101_15,1_plotQA,,What color is the suit the girl is wearing at the end of the video?,1,395
+23,24,movie101_15,1_plotQA,,What color is the table in the boys' dormitory in the video?,1,106
+24,25,movie101_34,1_plotQA,,How many candles are lit in the video?,1,260
+25,26,movie101_34,1_plotQA,,What color is the girl's hair in the video?,1,66
+26,27,movie101_34,1_plotQA,,What color is the hair of the boy buying things in the convenience store in the video?,1,622
+27,28,movie101_34,1_plotQA,,What color is the hoodie that the boy in the video is wearing?,1,187
+28,29,movie101_36,1_plotQA,,"In the scene where two people are looking at each other in the woods, what color is the coat worn by the girl?",1,120
+29,30,movie101_36,1_plotQA,,What color is the hat worn by the girl being rescued in the hospital in the video?,1,136
+30,31,movie101_36,1_plotQA,,What color is the scarf worn by the girl playing in the snow in a plaid shirt in the video?,1,58
+31,32,movie101_36,1_plotQA,,What color is the top worn by the woman holding a white cloth in her hand?,1,2
+32,33,tomjerry_10,1_plotQA,,What does the cartoon big mouse use to help the cartoon little mouse climb the table?,2,148;154
+33,34,tomjerry_10,1_plotQA,,What is the cartoon big mouse taking the cartoon little mouse to do?,2,176;243
+34,35,tomjerry_10,1_plotQA,,Why did the cartoon little mouse turn into a sphere?,2,246;248
+35,36,tomjerry_10,1_plotQA,,Why does the cartoon little mouse want to eat the cheese on the clip?,3,33;56;61
+36,37,needle_1,2_needle,,What is the backdrop of the basketball in the video?,1,148
+37,38,needle_1,2_needle,,Where is the basketball court located in the video?,1,148
+38,39,needle_13,2_needle,,What are the volunteers doing in the rubble during the simulation drill?,1,340
+39,40,needle_13,2_needle,,What are the volunteers searching for during the simulation drill?,1,340
+40,41,needle_13,2_needle,,What are the volunteers doing to find the casualties of the rocket attack in the simulation drill?,2,340;342
+41,42,needle_41,2_needle,,What animal is sitting very still at the mouth of the den in the video?,1,416
+42,43,needle_41,2_needle,,What is the American toad doing at the mouth of the den in the video?,2,352;358
+43,44,needle_41,2_needle,,What is the nature of the den where the American toad is sitting in the video?,1,351
+44,45,needle_41,2_needle,,What is the state of movement of the American toad at the mouth of the den in the video?,3,351;368;376
+45,46,needle_51,2_needle,,What animals are tied beside the paddy field where the two Malays kids are having fun?,1,475
+46,47,needle_51,2_needle,,What are the two kids doing in the paddy field?,1,476
+47,48,needle_51,2_needle,,What nationality are the kids having fun in the paddy field?,1,478
+48,49,needle_78,2_needle,,What part of the doctor's face is shown in closeup in the video?,1,506
+49,50,needle_86,2_needle,,What is the direction of the boy walking in the water with colorful party balloons towards?,1,132
+50,51,needle_86,2_needle,,What is the kid doing with the colorful party balloons in the video?,1,132
+51,53,needle_86,2_needle,,What is the mood of the boy walking in the water with colorful party balloons?,2,134;147
+52,54,needle_109,2_needle,,What does the engineer begin to work with in the video?,1,803
+53,55,needle_113,2_needle,,What are the volunteers searching for during the simulation drill?,1,5264
+54,56,needle_119,2_needle,,What is happening to the net on the basketball field in the video?,1,603
+55,57,needle_119,2_needle,,What is the backdrop of the basketball in the video?,1,603
+56,58,needle_119,2_needle,,What is the weather condition on the basketball court in the video?,1,603
+57,59,needle_119,2_needle,,Where is the basketball court located in the video?,1,603
+58,60,needle_149,2_needle,,What logo is displayed on the screen in the meeting room?,1,306
+59,61,needle_149,2_needle,,Where is the Goldman Sachs Group logo displayed?,1,306
+60,62,ego_10,3_ego,,What colour is the stool I sat on? ,1,408
+61,63,ego_13,3_ego,,How many green cups were on the table in the kitchen area?,1,310
+62,64,ego_13,3_ego,,How many picture frames were on the wall?,1,293
+63,65,ego_13,3_ego,,In what location did I see the second hint bottled water?,1,205
+64,66,ego_13,3_ego,,What color is the towel on the rack?,1,319
+65,67,ego_13,3_ego,,Where is the pack of Jenga game?,1,57
+66,68,ego_16,3_ego,,Did I leave the door of the second bedroom open?,2,474;477
+67,69,ego_16,3_ego,,In what room did I see the black suitcase?,1,453
+68,70,ego_16,3_ego,,Where was the blue chair?,1,377
+69,71,ego_16,3_ego,,Where was the blue poly bag?,1,377
+70,72,ego_16,3_ego,,Where was the water bottle?,1,427
+71,73,ego_17,3_ego,,Did I cut the wood plank?,2,367;373
+72,74,ego_17,3_ego,,What color was the measuring tape I removed from my pocket?,1,307
+73,75,ego_21,3_ego,,Where did I put the jenga box?,1,49
+74,76,ego_21,3_ego,,Where was the dust pan?,3,168;171;178
+75,77,ego_28,3_ego,,Did I attached the drill into the drill machine?,2,458;461
+76,78,ego_28,3_ego,,Did I throw the drill on the ground?,2,453;454
+77,79,ego_28,3_ego,,How many boxes did I pick up? ,1,389
+78,80,ego_28,3_ego,,Where did I keep the drill?,2,454;457
+79,81,ego_28,3_ego,,Where was the square bucket before I picked it up?,1,387
+80,82,ego_35,3_ego,,Did I leave the front door open,2,183;184
+81,83,ego_35,3_ego,,What colour was the bottle I pressed,1,304
+82,84,ego_35,3_ego,,What did I put in the orange trashcan ,2,169;171
+83,85,ego_35,3_ego,,Where did I put the blue helmet,1,193
+84,86,ego_35,3_ego,,Where did I put the leftover pack of dog food,2,270;277
+85,87,ego_35,3_ego,,Where was the cat after I put food in the red pet plate,2,348;359
+86,88,ego_39,3_ego,,Did I leave the car bonnet open?,1,34
+87,89,ego_39,3_ego,,What did I remove from the box?,2,260;261
+88,90,ego_53,3_ego,,What did I put in Dustbin ?,2,132;135
+89,91,ego_76,3_ego,,What the green t-shirt man was holding in his hand?,1,272
+90,92,ego_76,3_ego,,Where was the wooden bamboo?,1,252
+91,93,ego_76,3_ego,,Who did I talk to at the garage?,1,285
+92,94,count_1,4_count,,"In this video, how many times does the scene of the 'abseiling' action appear in total?",3,222;267;469
+93,95,count_14,4_count,,"In this video, how many instances are there of the 'tossing coin' action scene in total?",2,5;295
+94,96,count_69,4_count,,"In this video, how many instances are there of the 'pole vault' action scene in total?",1,193
+95,97,count_91,4_count,,"In this video, how many instances are there of the 'playing harp' action scene in total?",5,47;169;221;359;477
+96,98,count_102,4_count,,"Throughout this video, what is the total count of occurrences for the scene featuring the 'carving pumpkin' action",4,207;409;1220;1381
+97,99,count_112,4_count,,"In this video, how many times does the scene of the 'stomping grapes' action appear in total?",3,84;304;321
+98,100,count_115,4_count,,"In this video, how many instances are there of the 'stomping grapes' action scene in total?",1,94
+99,101,count_117,4_count,,"In this video, how many instances are there of the 'stomping grapes' action scene in total?",2,212;314
+100,102,count_130,4_count,,"In this video, how many instances are there of the 'making jewelry' action scene in total?",2,216;455
+101,104,count_165,4_count,,"Throughout this video, what is the total count of occurrences for the scene featuring the 'cooking sausages' action",1,31
+102,105,order_2,5_order,,Arrange the following events from the video in the correct chronological order: (1)A young and a kid are doing balance in a balance rope; (2)People are walking in a bridge to see a competition of men doing tricks on top of a balance rope; (3)A man is jumping and doing tricks in a balance rope above a cold river; (4)The boy is in a competition in snowy path doing tricks on a balance rope with people behind a fence watching him.,4,33;51;93;160
+103,106,order_10,5_order,,Arrange the following events from the video in the correct chronological order: (1)The man attempts to walk across the rope but falls and holds onto the rope; (2)A seal sits on a rock near an ocean; (3)The man films from a beach cliff next to a tent; (4)The man walks across the rope all the way to the attached rock.,6,188;414;422;523;542;549
+104,107,order_14,5_order,,Arrange the following events from the video in the correct chronological order: (1)The batter is poured into bowls and dye is added; (2)Ingredients are shown on a counter; (3)The cake is frosted with blue frosting and sprinkles are added; (4)The pans are greased and the different colored batter is poured into them.,5,378;431;482;486;565
+105,108,order_41,5_order,,Arrange the following events from the video in the correct chronological order: (1)The man replaces the tire on the front rim and pumps it up; (2)The man removes the front tire of the bike from the frame; (3)The man installs a headlamp to the bike; (4)The man reinstalls the front tire onto the bike frame.,6,243;251;255;266;279;362
+106,109,order_114,5_order,,Arrange the following events from the video in the correct chronological order: (1)A lady in black reads names a man hands her and passes out prize buckets to the kids; (2)A group of kids is building a moat filled with water around a sand castle; (3)We see an opening title screen; (4)We see kids across the beach working on their castles in the wet sand.,5,377;380;425;566;592
+107,110,order_128,5_order,,Arrange the following events from the video in the correct chronological order: (1)Woman tapes her hands with white tape; (2)Woman starts boxing in the ring with a guy; (3)Woman does sit ups on a towel on the beach; (4)Pictures of woman in her bikini are shown.,4,98;130;148;214
+108,111,order_133,5_order,,"Arrange the following events from the video in the correct chronological order: (1)The man starts to demonstrate playing the bongos in a lesson; (2)LP and Giovanni Logo appear on the black screen opening; (3)The lesson continues, alternating between color and black and white footage; (4)A man sits behind a set of bongo drums.",5,525;529;591;635;636
+109,112,order_160,5_order,,Arrange the following events from the video in the correct chronological order: (1)Woman begins ripping the wrapping paper with her hands; (2)Woman sets the box on top of the wrapping paper and begins wrapping the box; (3)Woman lifts up a box and sets it on the table; (4)Woman grabs a pair of scissors and tape.,8,4572;4573;4576;4582;4625;4630;4645;4691
+110,113,order_254,5_order,,Please identify the option that corresponds to the order of events as they occur in the video.,4,7;205;375;433
+111,114,order_260,5_order,,Can you tell me which option represents the actual order of actions shown in the video?,4,382;598;1761;2093
+112,115,surveil_0,6_anomaly_reco,,"Does this surveillance footage contain any anomalies? If yes, which kind of anomaly?",3,216;424;504
+113,116,surveil_28,6_anomaly_reco,,"Is there any abnormality in this surveillance video? If so, what type of abnormality is it?",6,94;136;177;324;754;872
+114,117,surveil_98,6_anomaly_reco,,"Are there any irregularities in this surveillance video? If there are, what sort are they?",3,53;72;301
+115,118,surveil_101,6_anomaly_reco,,"Does this surveillance footage contain any anomalies? If yes, which kind of anomaly?",1,106
+116,119,surveil_103,6_anomaly_reco,,"Does this surveillance footage contain any anomalies? If yes, which kind of anomaly?",6,154;196;864;2980;3290;3537
+117,120,surveil_107,6_anomaly_reco,,"Does this surveillance footage contain any anomalies? If yes, which kind of anomaly?",3,79;137;163
+118,121,surveil_115,6_anomaly_reco,,"Is there any abnormality in this surveillance video? If so, what type of abnormality is it?",2,108;522
+119,122,surveil_125,6_anomaly_reco,,"Does this surveillance footage contain any anomalies? If yes, which kind of anomaly?",3,36;52;126
+120,123,surveil_140,6_anomaly_reco,,"Is there any abnormality in this surveillance video? If so, what type of abnormality is it?",3,84;90;272
+121,124,surveil_159,6_anomaly_reco,,"Are there any irregularities in this surveillance video? If there are, what sort are they?",6,3;30;53;114;194;400
+122,125,203,7_topic_reasoning,,What is the main scene in the video?,3,35;73;177
+123,126,203,7_topic_reasoning,,What type of video is this?,2,133;477
+124,127,231,7_topic_reasoning,,What scenery is mainly shown in the video?,5,102;128;135;190;216
+125,128,AWA-16,7_topic_reasoning,,What is the setting of the video?,2,8;37
+126,129,AWD-1,7_topic_reasoning,,What is the background of the video?,3,29;79;340
+127,130,AWD-1,7_topic_reasoning,,What type of video is this?,4,75;222;226;345
+128,131,en_tv_15,7_topic_reasoning,,In what kind of setting does the scene in the video take place?,3,46;136;198
+129,132,en_tv_15,7_topic_reasoning,,What genre of movie is the clip in the video from?,2,325;341
+130,133,game_14,7_topic_reasoning,,What is the object being built in this video?,1,10
+131,135,movie101_10,7_topic_reasoning,,What color is the hat worn by the person who appeared in the market?,1,15
+132,136,movie101_10,7_topic_reasoning,,What color is the scarf worn by the woman in the video?,1,251
+133,137,movie101_26,7_topic_reasoning,,What is the genre of this movie clip?,6,32;41;56;195;410;747
+134,138,tomjerry_11,7_topic_reasoning,,What character appears the most in the video?,7,56;74;107;109;116;131;169
+135,139,xiaoliyu_2,7_topic_reasoning,,What is the background of the video?,4,85;271;279;293
+136,140,xiaoliyu_2,7_topic_reasoning,,What is the protagonist in the video?,3,37;40;343
+137,141,subPlot_new_all_0,8_sub_scene,,Please describe what happened when the man in black fell from the bridge over the turbulent river onto a leafless branch.,7,842;843;844;860;862;866;898
+138,142,subPlot_new_all_51,8_sub_scene,,Please describe the process of the man alone in the room getting injured on his forehead.,8,149;163;171;175;180;196;199;203
+139,143,subPlot_new_all_97,8_sub_scene,,Please describe the situation after a woman in white riding a horse is shot by an arrow and falls off the horse.,0,N/A
+140,144,subPlot_new_all_103,8_sub_scene,,Please describe the situation where the long-haired man gives the short-haired man meat and a small knife.,3,605;608;612
+141,145,subPlot_new_all_108,8_sub_scene,,Please describe the action of the girl holding a piggy bank after the boy in the yellow clothes takes out a turtle.,3,232;233;236
+142,146,subPlot_new_all_113,8_sub_scene,,Please describe in detail what happened after the man in the hat set himself on fire on the lookout tower and walked into the house engulfed in flames.,3,37;39;115
+143,147,subPlot_new_all_130,8_sub_scene,,Please describe what the man in jeans sees after arriving at the mountain top sightseeing trail.,4,1731;1733;1737;1740
+144,148,subPlot_new_all_136,8_sub_scene,,What did the girl do after hailing a taxi while smoking and talking on the phone outside the nightclub?,4,168;169;177;179
+145,149,subPlot_new_all_172,8_sub_scene,,Can you describe how the man with the plaid scarf dealt with the snow he brought home?,3,308;329;341
+146,150,subPlot_new_all_196,8_sub_scene,,Please describe the situation when the man in slippers in front of the kitten pours food.,3,22;26;27
+147,151,9,9_summary,,Can you summarize the main contents of this video?,17,0;48;57;91;115;136;241;242;302;306;316;347;412;416;442;447;468
+148,152,AWD-5,9_summary,,"Could you provide a summary of the video, focusing on its key points?",14,0;12;20;68;89;108;115;140;186;195;257;308;313;365
+149,153,AWH-4,9_summary,,Can you provide a summary of this video that covers the key points?,14,11;15;20;23;28;64;123;137;164;296;324;376;378;437
+150,154,en_tv_27,9_summary,,Can you summarize the main contents of this video?,10,1;4;55;57;87;89;234;237;408;415
+151,155,en_tv_29,9_summary,,"Could you provide a summary of the video, focusing on its key points?",9,0;81;106;174;355;364;410;424;425
+152,156,movie101_1,9_summary,,Can you summarize the main contents of this video?,10,14;18;84;89;156;172;181;190;199;212
+153,157,movie101_58,9_summary,,Can you provide a summary of this video that covers the key points?,15,17;44;57;68;212;239;290;364;421;443;459;468;487;523;547
+154,159,movie101_108,9_summary,,Can you provide a summary of this video that covers the key points?,11,0;14;33;43;120;121;178;181;263;311;318
+155,160,tomjerry_2,9_summary,,Can you summarize the main contents of this video?,12,32;36;38;120;127;128;154;168;224;235;255;262
+156,161,xiaoliyu_5,9_summary,,"Could you provide a summary of the video, focusing on its key points?",20,0;1;8;55;57;58;77;83;143;149;189;203;219;260;343;350;352;382;406;412

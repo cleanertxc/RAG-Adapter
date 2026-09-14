@@ -1,0 +1,6 @@
+# Lightweight frame preparation and notebook inspection.
+numpy
+Pillow
+opencv-python
+nbformat
+jupyterlab

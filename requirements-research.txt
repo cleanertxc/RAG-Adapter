@@ -1,0 +1,21 @@
+# Research notebook dependencies. This is not an archived environment lockfile.
+-r requirements.txt
+torch
+torchvision
+transformers<5
+sentence-transformers==3.1.1
+llama-index-core
+llama-index-finetuning
+llama-index-embeddings-huggingface
+llama-index-embeddings-clip
+llama-index-vector-stores-qdrant
+qdrant-client
+openai
+pyarrow
+pysrt
+matplotlib
+umap-learn
+tqdm
+imageio
+ftfy
+regex
