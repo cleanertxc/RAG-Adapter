@@ -16,6 +16,7 @@ RAG-Adapter selects question-relevant frames for a downstream video model. A vis
 | `scripts/caption_frames.py` | Question-independent CogVLM2 caption generation |
 | `scripts/evaluate_mc.py` | Multiple-choice option parsing and accuracy calculation |
 | `data/sampled_records/` | The 90-video sampling records for each of four benchmarks |
+| `docs/reproduction-data.md` | MMAT manifest and frame-caption downloads, file schemas and loading instructions |
 
 The notebooks retain the original research logic and include independent experiment sections. Read [the notebook guide](docs/notebooks.md) before executing cells. The GCL retriever checkpoints are available through the Google Drive links below. A complete environment and per-run configurations for every reported experiment are not included. No paper results have been recomputed during repository preparation.
 
@@ -29,6 +30,18 @@ The two GCL retrievers are hosted on Google Drive. This repository contains the 
 | Question to frame caption | BGE-M3, fine-tuned dense text encoder | [BGE-M3 checkpoint folder](https://drive.google.com/drive/folders/1tnh0CbHN9jHyhqjpKh18FqFhCUdsP1Zs?usp=drive_link) |
 
 These are the GCL retrievers used by the archived retrieval implementation. [Loading instructions](docs/checkpoints.md) describe the local file layout and model loading. [SHA-256 checksums](docs/checkpoint_metadata/SHA256SUMS.txt) and a [checkpoint manifest](docs/checkpoint_metadata/checkpoint-manifest.json) provide reference hashes for the original weight files. CogVLM2 and downstream answering models are obtained from their upstream repositories.
+
+## MMAT and frame-caption downloads
+
+The [reproduction data release](https://github.com/cleanertxc/RAG-Adapter/releases/tag/reproduction-data-20260919) contains the archived MMAT question-caption manifests and cached frame captions. The MMAT training manifest has 417,993 question records associated with 51,726 video IDs. Evaluation captions cover the four 90-video diagnostic samples, with the same IDs and NIF records provided in this repository.
+
+| Artifact | Download |
+| --- | --- |
+| MMAT manifests and associated captions | [mmat-archived-text.zip](https://github.com/cleanertxc/RAG-Adapter/releases/download/reproduction-data-20260919/mmat-archived-text.zip) |
+| Captions for the sampled benchmark videos | [sampled-frame-captions.zip](https://github.com/cleanertxc/RAG-Adapter/releases/download/reproduction-data-20260919/sampled-frame-captions.zip) |
+| File counts and checksums | [Release manifest](https://github.com/cleanertxc/RAG-Adapter/releases/download/reproduction-data-20260919/release-manifest.json), [SHA256SUMS.txt](https://github.com/cleanertxc/RAG-Adapter/releases/download/reproduction-data-20260919/SHA256SUMS.txt) |
+
+See [the data guide](docs/reproduction-data.md) for schemas, source/video mappings, extraction commands and the scope of the archived records. It documents the original partition overlap and distinguishes caption manifests from unsaved historical CLIP frame-pair choices. The files preserve the archive and do not represent a new training or evaluation run.
 
 ## Installation
 
@@ -122,6 +135,8 @@ For archived API experiments, set `OPENAI_API_KEY` in the environment. The SDK u
 ## Sampling records and validation
 
 The [sampling record guide](data/sampled_records/README.md) describes the four CSV files and video lists. Google Drive links for the fine-tuned retrievers are listed above. Benchmark videos and other model weights are obtained from their original providers.
+
+The [NIF annotation protocol](docs/nif-annotation.md) specifies the three annotators' roles, iterative evidence checks, removal of redundant frames and oracle inputs without padding. The [data download guide](docs/reproduction-data.md) links the recorded IDs to cached captions and MMAT manifests.
 
 ```bash
 python -m unittest discover -s tests -v
