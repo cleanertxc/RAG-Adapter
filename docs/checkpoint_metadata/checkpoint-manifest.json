@@ -1,0 +1,85 @@
+{
+  "description": "Existing GCL retriever checkpoints from the archived RAG-Adapter implementation. Weight files are unchanged.",
+  "assets": [
+    {
+      "name": "clip-vit-l14-gcl.tar.gz",
+      "size": 864566727,
+      "sha256": "ddfd61489ce416d1e1fd34f4a3154feffd97b14048b1004abc13f10b97719530"
+    },
+    {
+      "name": "bge-m3-gcl.tar.gz",
+      "size": 1866512882,
+      "sha256": "e9169729a434f40c4425a350d34d7669d49bc473caa5920ca2e5a2d85f019f6f"
+    }
+  ],
+  "weights": [
+    {
+      "branch": "CLIP",
+      "path": "clip_vit_l14_gcl/clip_best_finetuned_gc.pth",
+      "size": 932231142,
+      "sha256": "05400576b2c5b5d909855473f847446cdb5c4cc624456536c951ae6924d0db98"
+    },
+    {
+      "branch": "BGE-M3",
+      "path": "bge_m3_finetuned_gc/model.safetensors",
+      "size": 2271064456,
+      "sha256": "148042df289fef2f057c54966d73c56e53d58e9d751a340de4e6ef5d6f93997f"
+    }
+  ],
+  "loading_validation": {
+    "clip_text_shape": [
+      1,
+      768
+    ],
+    "clip_image_shape": [
+      1,
+      768
+    ],
+    "clip_finite": true,
+    "bge_shape": [
+      2,
+      1024
+    ],
+    "bge_finite": true
+  },
+  "training": {
+    "shared": {
+      "batch_size": 32,
+      "epochs": 2,
+      "temperature": 0.05,
+      "scheduler": "cosine",
+      "warmup_ratio": 0.1,
+      "original_random_seed": null
+    },
+    "clip": {
+      "optimizer": "AdamW",
+      "learning_rate": 1e-05,
+      "weight_decay": 0.01,
+      "betas": [
+        0.9,
+        0.98
+      ],
+      "epsilon": 1e-06,
+      "selection": "lowest validation loss"
+    },
+    "bge_m3": {
+      "optimizer": "AdamW",
+      "learning_rate": 2e-05,
+      "weight_decay": 0.01,
+      "no_decay": [
+        "bias",
+        "LayerNorm.bias",
+        "LayerNorm.weight"
+      ],
+      "selection": "retrieval evaluator primary MAP@100",
+      "sentence_transformers": "3.1.1"
+    }
+  },
+  "code_reference": "980074b2d600b11e7faed48cd45f41d6a3775961",
+  "version": "checkpoints-v1",
+  "distribution": {
+    "provider": "Google Drive",
+    "status": "prepared, upload pending",
+    "download_urls": {}
+  }
+}
