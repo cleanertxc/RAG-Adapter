@@ -1,17 +1,5 @@
 {
   "description": "Existing GCL retriever checkpoints from the archived RAG-Adapter implementation. Weight files are unchanged.",
-  "assets": [
-    {
-      "name": "clip-vit-l14-gcl.tar.gz",
-      "size": 864566727,
-      "sha256": "ddfd61489ce416d1e1fd34f4a3154feffd97b14048b1004abc13f10b97719530"
-    },
-    {
-      "name": "bge-m3-gcl.tar.gz",
-      "size": 1866512882,
-      "sha256": "e9169729a434f40c4425a350d34d7669d49bc473caa5920ca2e5a2d85f019f6f"
-    }
-  ],
   "weights": [
     {
       "branch": "CLIP",
@@ -79,7 +67,15 @@
   "version": "checkpoints-v1",
   "distribution": {
     "provider": "Google Drive",
-    "status": "prepared, upload pending",
-    "download_urls": {}
-  }
+    "status": "uploaded by author",
+    "download_urls": {
+      "CLIP": "https://drive.google.com/file/d/192JC513L0txbHmzlAnU-V8QHfbyIA7li/view?usp=sharing",
+      "BGE-M3": "https://drive.google.com/drive/folders/1tnh0CbHN9jHyhqjpKh18FqFhCUdsP1Zs?usp=drive_link"
+    },
+    "formats": {
+      "CLIP": "checkpoint file",
+      "BGE-M3": "checkpoint folder"
+    }
+  },
+  "checksum_scope": "Reference SHA-256 hashes of the original local weight files, for verification after download and extraction."
 }

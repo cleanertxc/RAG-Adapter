@@ -17,18 +17,18 @@ RAG-Adapter selects question-relevant frames for a downstream video model. A vis
 | `scripts/evaluate_mc.py` | Multiple-choice option parsing and accuracy calculation |
 | `data/sampled_records/` | The 90-video sampling records for each of four benchmarks |
 
-The notebooks retain the original research logic and include independent experiment sections. Read [the notebook guide](docs/notebooks.md) before executing cells. The GCL retriever checkpoints are prepared for distribution through Google Drive, with download links to be added here after upload. A complete environment and per-run configurations for every reported experiment are not included. No paper results have been recomputed during repository preparation.
+The notebooks retain the original research logic and include independent experiment sections. Read [the notebook guide](docs/notebooks.md) before executing cells. The GCL retriever checkpoints are available through the Google Drive links below. A complete environment and per-run configurations for every reported experiment are not included. No paper results have been recomputed during repository preparation.
 
 ## Fine-tuned encoder checkpoints
 
-The two GCL retrievers will be hosted on Google Drive. This repository contains the code, loading instructions and checkpoint metadata. The weight archives are not hosted on GitHub.
+The two GCL retrievers are hosted on Google Drive. This repository contains the code, loading instructions and checkpoint metadata.
 
 | Retrieval branch | Checkpoint | Download |
 | --- | --- | --- |
-| Question to visual frame | CLIP ViT-L/14, fine-tuned image and text towers | Google Drive link will be added after upload |
-| Question to frame caption | BGE-M3, fine-tuned dense text encoder | Google Drive link will be added after upload |
+| Question to visual frame | CLIP ViT-L/14, fine-tuned image and text towers | [CLIP checkpoint file](https://drive.google.com/file/d/192JC513L0txbHmzlAnU-V8QHfbyIA7li/view?usp=sharing) |
+| Question to frame caption | BGE-M3, fine-tuned dense text encoder | [BGE-M3 checkpoint folder](https://drive.google.com/drive/folders/1tnh0CbHN9jHyhqjpKh18FqFhCUdsP1Zs?usp=drive_link) |
 
-The prepared archives preserve the original weight files used by the archived retrieval implementation. [Loading instructions](docs/checkpoints.md) describe their formats, extraction and use. [SHA-256 checksums](docs/checkpoint_metadata/SHA256SUMS.txt) and a [checkpoint manifest](docs/checkpoint_metadata/checkpoint-manifest.json) are provided for verification. CogVLM2 and downstream answering models are obtained from their upstream repositories.
+These are the GCL retrievers used by the archived retrieval implementation. [Loading instructions](docs/checkpoints.md) describe the local file layout and model loading. [SHA-256 checksums](docs/checkpoint_metadata/SHA256SUMS.txt) and a [checkpoint manifest](docs/checkpoint_metadata/checkpoint-manifest.json) provide reference hashes for the original weight files. CogVLM2 and downstream answering models are obtained from their upstream repositories.
 
 ## Installation
 
@@ -121,7 +121,7 @@ For archived API experiments, set `OPENAI_API_KEY` in the environment. The SDK u
 
 ## Sampling records and validation
 
-The [sampling record guide](data/sampled_records/README.md) describes the four CSV files and video lists. Google Drive links for the fine-tuned retrievers will be maintained above. Benchmark videos and other model weights are obtained from their original providers.
+The [sampling record guide](data/sampled_records/README.md) describes the four CSV files and video lists. Google Drive links for the fine-tuned retrievers are listed above. Benchmark videos and other model weights are obtained from their original providers.
 
 ```bash
 python -m unittest discover -s tests -v

@@ -1,2 +1,2 @@
-ddfd61489ce416d1e1fd34f4a3154feffd97b14048b1004abc13f10b97719530  clip-vit-l14-gcl.tar.gz
-e9169729a434f40c4425a350d34d7669d49bc473caa5920ca2e5a2d85f019f6f  bge-m3-gcl.tar.gz
+05400576b2c5b5d909855473f847446cdb5c4cc624456536c951ae6924d0db98  clip_vit_l14_gcl/clip_best_finetuned_gc.pth
+148042df289fef2f057c54966d73c56e53d58e9d751a340de4e6ef5d6f93997f  bge_m3_finetuned_gc/model.safetensors
