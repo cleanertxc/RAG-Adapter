@@ -1,15 +1,19 @@
 # MMAT manifests and frame captions
 
-The [reproduction data release](https://github.com/cleanertxc/RAG-Adapter/releases/tag/reproduction-data-20260919) provides the archived MMAT text manifests and cached captions used in the sampled diagnostic experiments. Fine-tuned encoder weights remain on Google Drive, as listed in [the checkpoint guide](checkpoints.md).
+MMAT captions and annotations are hosted separately on Google Drive. The [reproduction data release](https://github.com/cleanertxc/RAG-Adapter/releases/tag/reproduction-data-20260919) retains the archived text bundle and cached captions for the sampled diagnostic experiments. Fine-tuned encoder weights remain on Google Drive, as listed in [the checkpoint guide](checkpoints.md).
 
 | Download | Contents |
 | --- | --- |
+| [MMAT captions](https://drive.google.com/file/d/1c1FM8PIXsjjPUfHTGKUaZlpnn6GwtdyN/view?usp=drive_link) | MMAT caption files |
+| [MMAT annotations](https://drive.google.com/file/d/1-lM2bMZwv2UcaT7ZvhCP0cUHju9WIvo2/view?usp=drive_link) | MMAT annotations |
 | [MMAT archived text](https://github.com/cleanertxc/RAG-Adapter/releases/download/reproduction-data-20260919/mmat-archived-text.zip) | Original question-caption manifests, source/video index and 61,508 corresponding caption files |
 | [Sampled frame captions](https://github.com/cleanertxc/RAG-Adapter/releases/download/reproduction-data-20260919/sampled-frame-captions.zip) | Cached candidate-frame captions for the 90 sampled videos in each of four benchmarks, with sampling and NIF records |
 | [Release manifest](https://github.com/cleanertxc/RAG-Adapter/releases/download/reproduction-data-20260919/release-manifest.json) | Counts, original manifest hashes, archive sizes and SHA-256 checksums |
 | [Archive checksums](https://github.com/cleanertxc/RAG-Adapter/releases/download/reproduction-data-20260919/SHA256SUMS.txt) | Checksums for the two ZIP files |
 
 ## MMAT records
+
+The file counts, schemas, and checksums below describe the archived GitHub text bundle. The Google Drive downloads are listed separately above.
 
 `MMAT/train_dataset.json` contains 417,993 question records and 51,726 video groups. `MMAT/test_dataset.json` contains 109,799 question records and 10,190 video groups. The latter filename is preserved from the archive and is used for retrieval validation in the research notebook.
 
@@ -39,7 +43,7 @@ The captions are archived outputs. Their generation call used one image, an empt
 
 ## Loading
 
-Download the two ZIP files and `SHA256SUMS.txt` into the same directory, then verify and extract them:
+For the archived GitHub packages, download `mmat-archived-text.zip`, `sampled-frame-captions.zip`, and `SHA256SUMS.txt` into the same directory, then verify and extract them:
 
 ```bash
 sha256sum -c SHA256SUMS.txt

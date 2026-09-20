@@ -33,13 +33,14 @@ These are the GCL retrievers used by the archived retrieval implementation. [Loa
 
 ## MMAT and frame-caption downloads
 
-The [reproduction data release](https://github.com/cleanertxc/RAG-Adapter/releases/tag/reproduction-data-20260919) contains the archived MMAT question-caption manifests and cached frame captions. The MMAT training manifest has 417,993 question records associated with 51,726 video IDs. Evaluation captions cover the four 90-video diagnostic samples, with the same IDs and NIF records provided in this repository.
+MMAT captions and annotations are available as separate Google Drive downloads. The archived MMAT training manifest has 417,993 question records associated with 51,726 video IDs. Evaluation captions remain in the [reproduction data release](https://github.com/cleanertxc/RAG-Adapter/releases/tag/reproduction-data-20260919) and cover the four 90-video diagnostic samples, with the same IDs and NIF records provided in this repository.
 
 | Artifact | Download |
 | --- | --- |
-| MMAT manifests and associated captions | [mmat-archived-text.zip](https://github.com/cleanertxc/RAG-Adapter/releases/download/reproduction-data-20260919/mmat-archived-text.zip) |
+| MMAT captions | [Google Drive](https://drive.google.com/file/d/1c1FM8PIXsjjPUfHTGKUaZlpnn6GwtdyN/view?usp=drive_link) |
+| MMAT annotations | [Google Drive](https://drive.google.com/file/d/1-lM2bMZwv2UcaT7ZvhCP0cUHju9WIvo2/view?usp=drive_link) |
 | Captions for the sampled benchmark videos | [sampled-frame-captions.zip](https://github.com/cleanertxc/RAG-Adapter/releases/download/reproduction-data-20260919/sampled-frame-captions.zip) |
-| File counts and checksums | [Release manifest](https://github.com/cleanertxc/RAG-Adapter/releases/download/reproduction-data-20260919/release-manifest.json), [SHA256SUMS.txt](https://github.com/cleanertxc/RAG-Adapter/releases/download/reproduction-data-20260919/SHA256SUMS.txt) |
+| Archived GitHub asset counts and checksums | [Release manifest](https://github.com/cleanertxc/RAG-Adapter/releases/download/reproduction-data-20260919/release-manifest.json), [SHA256SUMS.txt](https://github.com/cleanertxc/RAG-Adapter/releases/download/reproduction-data-20260919/SHA256SUMS.txt) |
 
 See [the data guide](docs/reproduction-data.md) for schemas, source/video mappings, extraction commands and the scope of the archived records. It documents the original partition overlap and distinguishes caption manifests from unsaved historical CLIP frame-pair choices. The files preserve the archive and do not represent a new training or evaluation run.
 
