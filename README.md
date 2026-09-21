@@ -26,8 +26,8 @@ The two GCL retrievers are hosted on Google Drive. This repository contains the 
 
 | Retrieval branch | Checkpoint | Download |
 | --- | --- | --- |
-| Question to visual frame | CLIP ViT-L/14, fine-tuned image and text towers | [CLIP checkpoint file](https://drive.google.com/file/d/192JC513L0txbHmzlAnU-V8QHfbyIA7li/view?usp=sharing) |
-| Question to frame caption | BGE-M3, fine-tuned dense text encoder | [BGE-M3 checkpoint folder](https://drive.google.com/drive/folders/1tnh0CbHN9jHyhqjpKh18FqFhCUdsP1Zs?usp=drive_link) |
+| Question to visual frame | CLIP ViT-L/14, fine-tuned image and text towers | [CLIP checkpoint file](https://drive.google.com/file/d/192JC513L0txbHmzlAnU-V8QHfbyIA7li/view?usp=drive_link) |
+| Question to frame caption | BGE-M3, fine-tuned dense text encoder | [BGE-M3 checkpoint download](https://drive.google.com/file/d/1ValkAgQQ730H7CWCsWSjN1W_7lwkxILT/view?usp=drive_link) |
 
 These are the GCL retrievers used by the archived retrieval implementation. [Loading instructions](docs/checkpoints.md) describe the local file layout and model loading. [SHA-256 checksums](docs/checkpoint_metadata/SHA256SUMS.txt) and a [checkpoint manifest](docs/checkpoint_metadata/checkpoint-manifest.json) provide reference hashes for the original weight files. CogVLM2 and downstream answering models are obtained from their upstream repositories.
 

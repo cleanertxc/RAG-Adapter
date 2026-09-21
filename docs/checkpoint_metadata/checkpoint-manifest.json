@@ -69,12 +69,12 @@
     "provider": "Google Drive",
     "status": "uploaded by author",
     "download_urls": {
-      "CLIP": "https://drive.google.com/file/d/192JC513L0txbHmzlAnU-V8QHfbyIA7li/view?usp=sharing",
-      "BGE-M3": "https://drive.google.com/drive/folders/1tnh0CbHN9jHyhqjpKh18FqFhCUdsP1Zs?usp=drive_link"
+      "CLIP": "https://drive.google.com/file/d/192JC513L0txbHmzlAnU-V8QHfbyIA7li/view?usp=drive_link",
+      "BGE-M3": "https://drive.google.com/file/d/1ValkAgQQ730H7CWCsWSjN1W_7lwkxILT/view?usp=drive_link"
     },
     "formats": {
       "CLIP": "checkpoint file",
-      "BGE-M3": "checkpoint folder"
+      "BGE-M3": "checkpoint package"
     }
   },
   "checksum_scope": "Reference SHA-256 hashes of the original local weight files, for verification after download and extraction."

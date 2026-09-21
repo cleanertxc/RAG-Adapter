@@ -1,19 +1,18 @@
 # MMAT manifests and frame captions
 
-MMAT captions and annotations are hosted separately on Google Drive. The [reproduction data release](https://github.com/cleanertxc/RAG-Adapter/releases/tag/reproduction-data-20260919) retains the archived text bundle and cached captions for the sampled diagnostic experiments. Fine-tuned encoder weights remain on Google Drive, as listed in [the checkpoint guide](checkpoints.md).
+Use the Google Drive links below to download MMAT captions and annotations for data inspection and retriever training. Cached captions for the sampled diagnostic experiments are available in the [reproduction data release](https://github.com/cleanertxc/RAG-Adapter/releases/tag/reproduction-data-20260919). Fine-tuned encoder weights are also hosted on Google Drive, as listed in [the checkpoint guide](checkpoints.md).
 
 | Download | Contents |
 | --- | --- |
 | [MMAT captions](https://drive.google.com/file/d/1c1FM8PIXsjjPUfHTGKUaZlpnn6GwtdyN/view?usp=drive_link) | MMAT caption files |
 | [MMAT annotations](https://drive.google.com/file/d/1-lM2bMZwv2UcaT7ZvhCP0cUHju9WIvo2/view?usp=drive_link) | MMAT annotations |
-| [MMAT archived text](https://github.com/cleanertxc/RAG-Adapter/releases/download/reproduction-data-20260919/mmat-archived-text.zip) | Original question-caption manifests, source/video index and 61,508 corresponding caption files |
 | [Sampled frame captions](https://github.com/cleanertxc/RAG-Adapter/releases/download/reproduction-data-20260919/sampled-frame-captions.zip) | Cached candidate-frame captions for the 90 sampled videos in each of four benchmarks, with sampling and NIF records |
 | [Release manifest](https://github.com/cleanertxc/RAG-Adapter/releases/download/reproduction-data-20260919/release-manifest.json) | Counts, original manifest hashes, archive sizes and SHA-256 checksums |
-| [Archive checksums](https://github.com/cleanertxc/RAG-Adapter/releases/download/reproduction-data-20260919/SHA256SUMS.txt) | Checksums for the two ZIP files |
+| [Archive checksums](https://github.com/cleanertxc/RAG-Adapter/releases/download/reproduction-data-20260919/SHA256SUMS.txt) | Reference checksums for the archived GitHub packages, including the sampled-frame-caption archive |
 
 ## MMAT records
 
-The file counts, schemas, and checksums below describe the archived GitHub text bundle. The Google Drive downloads are listed separately above.
+The counts and schemas below document the archived MMAT training records. Obtain MMAT captions and annotations from the two Google Drive links above. The archived release checksums apply to the original GitHub packages.
 
 `MMAT/train_dataset.json` contains 417,993 question records and 51,726 video groups. `MMAT/test_dataset.json` contains 109,799 question records and 10,190 video groups. The latter filename is preserved from the archive and is used for retrieval validation in the research notebook.
 
@@ -30,7 +29,7 @@ The archived partitions share 408 TGIF video IDs, listed in `MMAT/overlapping_vi
 
 ## Evaluation captions and sampling records
 
-The second archive contains `dataset/<dataset>/captions/<video_id>/<frame_id>.txt`, with original caption bytes and filenames. Its video IDs match the four lists in [`data/sampled_records`](../data/sampled_records/). These are the sampled diagnostic sets, not caption caches for every video in the expanded main evaluation.
+The sampled-frame-caption archive contains `dataset/<dataset>/captions/<video_id>/<frame_id>.txt`, with original caption bytes and filenames. Its video IDs match the four lists in [`data/sampled_records`](../data/sampled_records/). These are the sampled diagnostic sets, not caption caches for every video in the expanded main evaluation.
 
 * Video-MME: 90 videos and 270 question records, with five videos in each duration/domain combination.
 * MLVU: 90 videos and 156 question records across nine tasks. Its diagnostic sample includes the two generation tasks.
@@ -43,11 +42,12 @@ The captions are archived outputs. Their generation call used one image, an empt
 
 ## Loading
 
-For the archived GitHub packages, download `mmat-archived-text.zip`, `sampled-frame-captions.zip`, and `SHA256SUMS.txt` into the same directory, then verify and extract them:
+Download MMAT captions and annotations from Google Drive and extract any archives. Place the annotation manifests at `data_local/MMAT/train_dataset.json` and `data_local/MMAT/test_dataset.json`, and retain the caption paths referenced by their records.
+
+For the sampled diagnostic captions, download `sampled-frame-captions.zip` and `SHA256SUMS.txt` from the GitHub links above. Verify the downloaded archive and extract it into the same data directory:
 
 ```bash
-sha256sum -c SHA256SUMS.txt
-unzip mmat-archived-text.zip -d data_local
+sha256sum --ignore-missing -c SHA256SUMS.txt
 unzip sampled-frame-captions.zip -d data_local
 mkdir -p runs/finetune/video_mme
 cp data_local/MMAT/train_dataset.json runs/finetune/video_mme/

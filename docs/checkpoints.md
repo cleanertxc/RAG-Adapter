@@ -4,14 +4,14 @@ The two existing GCL retrievers referenced by the archived RAG-Adapter implement
 
 | Download | Expected local contents | Initialization |
 | --- | --- | --- |
-| [CLIP checkpoint file](https://drive.google.com/file/d/192JC513L0txbHmzlAnU-V8QHfbyIA7li/view?usp=sharing) | `clip_vit_l14_gcl/clip_best_finetuned_gc.pth` | OpenAI CLIP ViT-L/14 |
-| [BGE-M3 checkpoint folder](https://drive.google.com/drive/folders/1tnh0CbHN9jHyhqjpKh18FqFhCUdsP1Zs?usp=drive_link) | `bge_m3_finetuned_gc/`, including `model.safetensors`, tokenizer, pooling and normalization configuration | BAAI/bge-m3 |
+| [CLIP checkpoint file](https://drive.google.com/file/d/192JC513L0txbHmzlAnU-V8QHfbyIA7li/view?usp=drive_link) | `clip_vit_l14_gcl/clip_best_finetuned_gc.pth` | OpenAI CLIP ViT-L/14 |
+| [BGE-M3 checkpoint download](https://drive.google.com/file/d/1ValkAgQQ730H7CWCsWSjN1W_7lwkxILT/view?usp=drive_link) | `bge_m3_finetuned_gc/`, including `model.safetensors`, tokenizer, pooling and normalization configuration | BAAI/bge-m3 |
 
 CLIP includes both its image and text towers. The BGE-M3 checkpoint supplies dense embeddings for question-caption retrieval. It does not include separately trained sparse or ColBERT heads. Obtain CogVLM2 and downstream answering models from their upstream repositories.
 
 ## Download and arrange files
 
-Download the CLIP checkpoint file and the complete BGE-M3 folder. If Google Drive packages a download as an archive, extract it first. Arrange the files under the repository directory as follows:
+Download the CLIP checkpoint and the BGE-M3 checkpoint package using the links above. Extract any downloaded archive before loading the models. Arrange the files under the repository directory as follows:
 
 ```text
 checkpoints/
