@@ -18,7 +18,7 @@ RAG-Adapter selects question-relevant frames for a downstream video model. A vis
 | `data/sampled_records/` | The 90-video sampling records for each of four benchmarks |
 | `docs/reproduction-data.md` | MMAT manifest and frame-caption downloads, file schemas and loading instructions |
 
-The notebooks retain the original research logic and include independent experiment sections. Read [the notebook guide](docs/notebooks.md) before executing cells. The GCL retriever checkpoints are available through the Google Drive links below. A complete environment and per-run configurations for every reported experiment are not included. No paper results have been recomputed during repository preparation.
+The notebooks contain independent sections from the original research workflow. The multiple-choice parser, question-ID matching, MMR selection, and CLIP video grouping have been updated to follow the revised evaluation rules and method definitions. Read [the notebook guide](docs/notebooks.md) for these changes and before executing cells. The GCL retriever checkpoints are available through the Google Drive links below. A complete environment and per-run configurations for every reported experiment are not included. No paper results have been recomputed during repository preparation.
 
 ## Fine-tuned encoder checkpoints
 
@@ -129,7 +129,7 @@ Save one JSON object per line with `question_id`, `options`, `answer`, and `resp
 python scripts/evaluate_mc.py predictions.jsonl --output runs/accuracy.json
 ```
 
-The evaluator extracts a valid option letter using format matching. A missing, invalid or conflicting answer is counted as incorrect and remains in the denominator. This is the current evaluation rule. The archived evaluation notebook preserves earlier parsing behavior for inspection and is not used by this command.
+The evaluator extracts a valid option letter using format matching. A missing, invalid or conflicting answer is counted as incorrect and remains in the denominator. This is the current evaluation rule. The multiple-choice sections in `notebooks/legacy_evaluation.ipynb` use the same parser and also count unparsed responses as incorrect. The notebook retains historical dataset loaders and generation-judging sections. Updating the parser does not recompute historical experiment results.
 
 For archived API experiments, set `OPENAI_API_KEY` in the environment. The SDK uses its default endpoint unless `OPENAI_BASE_URL` is explicitly configured. Keys are never stored in the source. API calls can incur charges. The historical GPT judging prompts are in `notebooks/legacy_evaluation.ipynb` and concern the MLVU generation tasks rather than the main multiple-choice comparison.
 
